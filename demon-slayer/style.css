@@ -1,0 +1,30 @@
+img {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(221, 255, 255);
+}
+h3{
+    font-family: "Comforter", cursive;
+    font-size: 3em;
+}
+p{
+    font-family: "LXGW WenKai TC", cursive;
+}
+li{
+    font-family: "EB Garamond", serif;
+    /* font-weight: 900; */
+    font-size: 1.2em;
+}
+footer{
+    background-color: #003a35;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: azure;
+}
+.socio{
+    color: darkturquoise;
+    font-size: 1.6em;
+}
