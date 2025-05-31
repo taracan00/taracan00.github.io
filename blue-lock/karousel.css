@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+.long-slider {
+    position: relative;
+    height: 100%;
+    margin: auto;
+    /* overflow: hidden; */
+    /* transform: translateX(); */
+}
+
+.name-personage {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffffba;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.name-personage p {
+    /* font-family: "Sansation", sans-serif; */
+    /* font-family: "Rubik Mono One", monospace; */
+    font-family: "Russo One", sans-serif;
+
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.356);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    transition: 0.8s;
+    font-size: 4em;
+    user-select: none;
+    cursor: pointer;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(134, 131, 131, 0.658);
+
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.item-wrap {
+    /* position: absolute; */
+    display: flex;
+    height: 500px;
+    transition: 0.7s ease-out;
+    max-width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.slider-item {
+    /* width: 450px; */
+    margin-left: 20px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.item-wrap img {
+    height: 100%;
+    width: auto;
+}
+
+
+
+/* Works on Chrome, Edge, and Safari */
+
+.item-wrap::-webkit-scrollbar {
+    height: 4px;
+    /* висота/ширина скрола */
+}
+
+.item-wrap::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    /*смужка */
+}
+
+.item-wrap::-webkit-scrollbar-thumb {
+    /*те, що їздить */
+    background-color: rgb(0, 119, 255);
+    border-radius: 20px;
+    /* border: 3px solid rgb(163, 163, 163);  */
+}
+
+.item-wrap::-webkit-scrollbar-thumb:hover {
+    /*те, що їздить */
+    background-color: rgb(2, 32, 86);
+
+}
+
+/* Works on Firefox */
+.item-wrap {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(0, 11, 72) rgba(125, 162, 254, 0.328);
+}
+
+@media (max-width: 575px) {
+    .item-wrap {
+         height: 270px;
+    }
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 575px) {
+    .item-wrap {
+         height: 270px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .item-wrap {
+        height: 400px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .item-wrap {
+        height: 500px;
+    }
+ }
+
+ /* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .item-wrap {
+        height: 550px;
+    }
+}
